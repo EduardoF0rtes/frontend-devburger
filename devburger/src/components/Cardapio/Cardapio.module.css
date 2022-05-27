@@ -1,0 +1,4 @@
+.cardapio{
+    display: flex;
+    flex-wrap: wrap;
+}
