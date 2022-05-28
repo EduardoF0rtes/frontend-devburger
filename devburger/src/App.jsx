@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Cardapio from './components/Cardapio/Cardapio';
+import AdicionaItem from './components/AdicionaItem/AdicionaItem';
 
 function App() {
 
@@ -9,7 +10,6 @@ function App() {
       <div className="App">
         <Cardapio />
       </div>
-
     </>
   )
 }
