@@ -1,0 +1,13 @@
+.item{
+    border: blue solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 35vh;
+    margin: 20px ;
+}
+.item img{
+    width: 100px;
+    height: 100px;
+}
