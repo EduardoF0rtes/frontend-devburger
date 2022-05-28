@@ -4,7 +4,7 @@
   }
   
   :root {
-    --heights: 50vh;
+    --heights: 80vh;
     --widths: 100%;
   }
   
@@ -42,6 +42,7 @@
     width: 100%;
     height: 100%;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     position: absolute;
     text-align: center;
