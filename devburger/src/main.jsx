@@ -7,3 +7,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 )
+
+function main () {
+  return (
+<div className="App">
+      
+
+
+
+
+    </div>
+
+
+  )
+}
+
+export default main
