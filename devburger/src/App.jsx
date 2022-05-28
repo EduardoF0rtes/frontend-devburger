@@ -1,11 +1,28 @@
+import React from "react"
+import Slider from "./components/Slider/Slider";
+
+
+import main from "./main"
+
 
 function App() {
   
   return (
-    <div className="App">
-      
-    </div>
+<div>
+
+  
+
+  <Slider/>
+
+</div>
+    
+    
+
+
+  
+    
+
   )
 }
 
-export default App
+export default App;
