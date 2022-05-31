@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from './Cardapio.module.css'
 import Card from '../Cards/Card';
+import { api } from '../../Services/Api';
 
 
 function Cardapio() {
@@ -8,7 +9,7 @@ function Cardapio() {
         const [cardapio, setCardapio] = useState([]);      
             useEffect(() => {
         try{
-            fetch('https://apirestdevburger.herokuapp.com/cardapio')
+            fetch(api)
             .then((response) => response.json())
             .then((data)=> {
                 setDados(data.rows)
@@ -28,6 +29,7 @@ function Cardapio() {
             id={cardapio.id_produto}
             name={cardapio.produto}
             preco={cardapio.preco}
+            descricao={cardapio.descricao}
             />
                 )
             })}

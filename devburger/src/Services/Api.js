@@ -1,0 +1,1 @@
+export const api = 'https://apirestdevburger.herokuapp.com/cardapio';
