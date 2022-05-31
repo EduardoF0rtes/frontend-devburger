@@ -8,12 +8,10 @@
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    height: 250px;
+    height: 30vh;
     width: 100%;
-    /* background-color: black ; */
     background-image: linear-gradient( to right, #202022, #878787);
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .img{
@@ -35,7 +33,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .ul li{
@@ -47,6 +45,21 @@
 .ul a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media (max-width: 991px) {
+    .ul {
+        font-size: calc(1vw + 0.7rem);
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ul {
+        padding-bottom: 5vh;
+    }
 }
 
 
