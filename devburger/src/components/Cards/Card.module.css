@@ -1,13 +1,15 @@
 .item{
-    border: blue solid 2px;
+    border: #F2B544 solid 1px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 25%;
     height: 35vh;
-    margin: 20px ;
+    margin: 2vh ;
+    padding-bottom: 1rem;
 }
 .item img{
-    width: 100px;
-    height: 100px;
+    width: 20vh;
 }
