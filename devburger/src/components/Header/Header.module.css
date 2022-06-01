@@ -60,6 +60,10 @@
     .ul {
         padding-bottom: 5vh;
     }
+
+    .nav .ul a li {
+        font-size: calc(.8vw + .65rem);
+    }
 }
 
 
