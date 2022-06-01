@@ -10,7 +10,7 @@ function CardapioPage() {
         <Cardapio/>
         <div className={styles.btn}>
             <a href="../edicao"><Button className={styles.btn} text='➕' /> </a>
-            <Button text='🔁'/> 
+            <a href="../update"><Button text='🔁'/> </a>
             <Button text='❌' />
             
             <br />

@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+    background-color: #EDA83B;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+}
+
+.form input {
+    margin: 10px;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.form input:focus {
+    background-color: rgb(189, 186, 186);
+}
+
+.Card {
+    border: 2px solid red;
+}
+.form label {
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
+    font: italic;
+    margin-left: 3%;
+}

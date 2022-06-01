@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { api } from '../../Services/Api'
+import styles from './Adicionar.module.css';
 
 function Adicionar() {
 
@@ -32,21 +33,23 @@ function Adicionar() {
         }
     }
     return (
+<div className={styles.container}>
+        <form className={styles.form} onSubmit={(e) => atualiza(e)}>
 
-        <form onSubmit={(e) => atualiza(e)}>
-            <label htmlFor="">id_produto: </label>
+            <h1>Adicione Novo Burger</h1><hr /><br />
+            <label htmlFor="">Id : </label>
             <input type="id" onChange={(e) => {
                 setId(e.target.value)
             }} /> <br />
-            <label htmlFor="">produto: </label>
+            <label htmlFor="">Produto: </label>
             <input type="text" onChange={(e) => {
                 setProduto(e.target.value)
             }} /> <br />
-            <label htmlFor="">preco: </label>
+            <label htmlFor="">Preco: </label>
             <input type="number" onChange={(e) => {
                 setPreco(e.target.value)
             }} /> <br />
-            <label htmlFor="">descrição: </label>
+            <label htmlFor="">Descrição: </label>
             <input type="text" onChange={(e) => {
                 setDescricao(e.target.value)
                 setItem({
@@ -55,7 +58,6 @@ function Adicionar() {
                     preco,
                     descricao
                 })
-                console.log(item)
             }} /> <br /><br />
             <br />
             <hr />
@@ -65,7 +67,7 @@ function Adicionar() {
             <br />
             <br />
         </form>
-
+</div>
     )
 
 }
