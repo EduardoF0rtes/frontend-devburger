@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from "../Carousel/Carousel.module.css"
 
 function Carousel({activeIndex, ImagensCarousel}) {
   return (
 
-    <section>
+    <section className={styles.section}>
       {ImagensCarousel.map((slide, index) => (
         <div
         key={index}
