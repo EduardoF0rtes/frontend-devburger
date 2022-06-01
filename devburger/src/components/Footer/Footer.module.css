@@ -1,22 +1,74 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetFooter {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 5vh;
+}
+
+.mapaDoSite {
+    display: flex;
+    flex-direction: column;
+}
+
+.mapaDoSite h3, .mapaDoSite a, .sigaNos h3, .sigaNos p, .baixeNossoApp h3 {
+    padding-bottom: 20px;
+}
+
+.widgetFooter h3 {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapaDoSite a, .sigaNos p {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #202022;
+}
+
+.redes a, .plataformas a {
+    padding: 0.5vh;
+}
+
+
+.rightsContainer {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient( to right, #202022, #878787);
 }
 
-p {
+.rightsContainer p {
     text-align: center;
     padding: 4vh 0;
 }
 
-p a {
-    text-decoration: none;
-    color: white;
-}
-
 .rights {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #EDA83B;
+}
+
+.infos {
+    font-size: 0.75rem;
+}
+
+@media (max-width: 991px) {
+    .widgetFooter h3 {
+        font-size: calc(0.6vw + 0.8rem);
+        margin: 0 .5rem;
+    }
+    
+    .mapaDoSite a, .sigaNos p {
+        font-size: calc(.5vw + 0.7rem);
+        margin: 0 .5rem;
+    }
+
+    .logo img {
+        display: none;
+    }
 }
