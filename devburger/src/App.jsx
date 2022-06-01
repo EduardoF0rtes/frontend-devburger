@@ -11,23 +11,19 @@ import Edicao from "./pages/Edicao/Edicao";
 
 function App() {
 
-
   return (
     <div className="App">
       <Router>
-      <Header />
-      <Slider/>
-      <hr />
-      <Cardapio />
-      <Footer />
-      <Routes>
-        <Route path='/' element={<Home/>} ></Route>
-        <Route path='/cardapio' element={<CardapioPage/>} ></Route>
-        <Route path='/edicao' element={<Edicao/>} > Editar Card</Route>
-        
-      </Routes>
-      </Router>      
-      </div>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} ></Route>
+          <Route path='/cardapio' element={<CardapioPage />} ></Route>
+          <Route path='/edicao' element={<Edicao />} > Editar Card</Route>
+
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   )
 }
 
