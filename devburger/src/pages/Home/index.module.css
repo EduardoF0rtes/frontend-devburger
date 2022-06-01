@@ -1,0 +1,13 @@
+.segundo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: gold solid 3px;
+    justify-content: space-around;
+}
+.segundo div{
+    width: 50%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
