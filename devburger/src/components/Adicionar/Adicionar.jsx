@@ -32,19 +32,19 @@ function Adicionar() {
         }
     }
     return (
+
         <form onSubmit={(e) => atualiza(e)}>
             <label htmlFor="">id_produto: </label>
             <input type="id" onChange={(e) => {
                 setId(e.target.value)
             }} /> <br />
-
             <label htmlFor="">produto: </label>
             <input type="text" onChange={(e) => {
-                setProduto( e.target.value)
+                setProduto(e.target.value)
             }} /> <br />
             <label htmlFor="">preco: </label>
             <input type="number" onChange={(e) => {
-                setPreco(e.target.value )
+                setPreco(e.target.value)
             }} /> <br />
             <label htmlFor="">descrição: </label>
             <input type="text" onChange={(e) => {
@@ -57,16 +57,17 @@ function Adicionar() {
                 })
                 console.log(item)
             }} /> <br /><br />
-            <button>Salvar</button>
             <br />
             <hr />
             <br />
+            <button>Adicionar</button>
+            <br />
+            <br />
+            <br />
         </form>
+
     )
 
-
 }
-
-
 
 export default Adicionar
