@@ -25,7 +25,3 @@ padding: 10px;
 .Form input:focus{
     background-color: rgb(189, 186, 186);
 }
-
-.Card{
-    border: 2px solid red;
-}
