@@ -1,20 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { api } from '../../Services/Api'
 import Card from '../Cards/Card';
 import styles from './Adicionar.module.css';
 
 function Adicionar() {
-
     const [item, setItem] = useState({
         id_produto: 100,
         produto: 'Dev-X',
         preco: 99,
         descricao: 'Descrição produto'
     });
-    const [id, setId] = useState({ id_produto: 99 })
-    const [produto, setProduto] = useState({ produto: 'Dev-X' })
-    const [preco, setPreco] = useState({ preco: 15 })
-    const [descricao, setDescricao] = useState({ descricao: 'Breve descricao' })
+    const [id, setId] = useState(99)
+    const [produto, setProduto] = useState('Dev-X' )
+    const [preco, setPreco] = useState(15)
+    const [descricao, setDescricao] = useState('Breve descricao')
 
     const atualiza = (e) => {
         e.preventDefault();
@@ -45,6 +44,7 @@ function Adicionar() {
                 <label htmlFor="">Produto: </label>
                 <input type="text" onChange={(e) => {
                     setProduto(e.target.value)
+                    console.log(produto)
                 }} /> <br />
                 <label htmlFor="">Preco: </label>
                 <input type="number" onChange={(e) => {
@@ -59,6 +59,7 @@ function Adicionar() {
                         preco,
                         descricao
                     })
+                    console.log(item)
                 }} /> <br /><br />
                 <br />
                 <hr />
@@ -70,12 +71,15 @@ function Adicionar() {
                 <br />
             </form>
             <div >
-                <Card className={styles.card} key={id}
-                    id={item.id_produto}
-                    name={item.id_produto}
-                    preco={item.preco}
-                    descricao={item.descricao}
-                />                               
+                <h1>Preview</h1>
+                <Card
+                    card='100%'
+                    key={id}
+                    id={id}
+                    name={produto}
+                    preco={preco}
+                    descricao={descricao}
+                />
 
             </div>
         </div>
