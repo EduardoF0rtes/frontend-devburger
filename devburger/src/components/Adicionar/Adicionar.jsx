@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { api } from '../../Services/Api'
+import Card from '../Cards/Card';
 import styles from './Adicionar.module.css';
 
 function Adicionar() {
@@ -33,41 +34,51 @@ function Adicionar() {
         }
     }
     return (
-<div className={styles.container}>
-        <form className={styles.form} onSubmit={(e) => atualiza(e)}>
+        <div className={styles.container}>
+            <form className={styles.form} onSubmit={(e) => atualiza(e)}>
 
-            <h1>Adicione Novo Burger</h1><hr /><br />
-            <label htmlFor="">Id : </label>
-            <input type="id" onChange={(e) => {
-                setId(e.target.value)
-            }} /> <br />
-            <label htmlFor="">Produto: </label>
-            <input type="text" onChange={(e) => {
-                setProduto(e.target.value)
-            }} /> <br />
-            <label htmlFor="">Preco: </label>
-            <input type="number" onChange={(e) => {
-                setPreco(e.target.value)
-            }} /> <br />
-            <label htmlFor="">Descrição: </label>
-            <input type="text" onChange={(e) => {
-                setDescricao(e.target.value)
-                setItem({
-                    id,
-                    produto,
-                    preco,
-                    descricao
-                })
-            }} /> <br /><br />
-            <br />
-            <hr />
-            <br />
-            <button>Adicionar</button>
-            <br />
-            <br />
-            <br />
-        </form>
-</div>
+                <h1>Adicione Novo Burger</h1><hr /><br />
+                <label htmlFor="">Id : </label>
+                <input type="id" onChange={(e) => {
+                    setId(e.target.value)
+                }} /> <br />
+                <label htmlFor="">Produto: </label>
+                <input type="text" onChange={(e) => {
+                    setProduto(e.target.value)
+                }} /> <br />
+                <label htmlFor="">Preco: </label>
+                <input type="number" onChange={(e) => {
+                    setPreco(e.target.value)
+                }} /> <br />
+                <label htmlFor="">Descrição: </label>
+                <input type="text" onChange={(e) => {
+                    setDescricao(e.target.value)
+                    setItem({
+                        id,
+                        produto,
+                        preco,
+                        descricao
+                    })
+                }} /> <br /><br />
+                <br />
+                <hr />
+                <br />
+                <button>Adicionar</button>
+                <button>Voltar</button>
+                <br />
+                <br />
+                <br />
+            </form>
+            <div >
+                <Card className={styles.card} key={id}
+                    id={item.id_produto}
+                    name={item.id_produto}
+                    preco={item.preco}
+                    descricao={item.descricao}
+                />                               
+
+            </div>
+        </div>
     )
 
 }

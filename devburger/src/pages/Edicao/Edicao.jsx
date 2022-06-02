@@ -8,6 +8,7 @@ function Edicao() {
     return (
         <div className={styles.btn}>
           <Adicionar/>
+         
         </div>
     )
 }

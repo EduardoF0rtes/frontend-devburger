@@ -8,6 +8,7 @@
     display: flex;
 }
 .btn button{
+    text-decoration: none;
     background-color: black;
     width: 2em;
     height: 2em;
@@ -23,4 +24,7 @@
     width: 2.1em;
     height: 2.1em;
     border: red solid 1px;
+}
+.btn a{
+    text-decoration: none;
 }
