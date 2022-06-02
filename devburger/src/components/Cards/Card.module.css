@@ -5,11 +5,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 25%;
     height: 35vh;
     margin: 2vh ;
-    padding-bottom: 1rem;
+    padding: 3vh;
 }
 .item img{
-    width: 20vh;
+    max-width: 20vh;
+}
+
+@media (max-width: 991px) {
+    .item {
+        padding: 5vh;
+        display: flex;
+        width: 35vh;
+        margin: 3vh auto;
+    }
+
+    .item img {
+    width: 15vh;
+    }
+    
 }
