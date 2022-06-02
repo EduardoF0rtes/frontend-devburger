@@ -1,6 +1,13 @@
 .cardapio{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 12%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+.cardapio {
+    flex-direction: column;
+    }
+    
 }
