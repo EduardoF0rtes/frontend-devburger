@@ -7,10 +7,15 @@
     align-items: center;
     text-align: center;
     width: 25%;
-    /* width: 25%; */
     height: 35vh;
     margin: 2vh ;
     padding: 3vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 20; 
+    -webkit-box-orient: vertical; 
+
 }
 .item img{
     max-width: 20vh;

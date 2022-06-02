@@ -16,7 +16,7 @@
 .form div{
     position: relative;
 }
-.form input {
+.form input, textarea {
     display: block;
     transition: top .3s, left .3s;
     position: relative;

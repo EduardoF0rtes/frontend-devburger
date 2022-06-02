@@ -1,8 +1,6 @@
 import React from 'react'
-import Button from '../Button/Button'
 import styles from "./Form.module.css"
 import Card from '../Cards/Card'
-import tanana from '../../pages/Cardapio/index'
 
 function Form(props) {
 
@@ -25,21 +23,14 @@ function Form(props) {
           <label htmlFor="">Preco: </label><br />
         </div>
         <div>
-          <input type="text" onChange={props.change4} />
+          <textarea type="text" onChange={props.change4} />
           <label htmlFor="">Descrição: </label><br /><br />
         </div>
-
-
-
-        <div>
-
-        </div>
-
       </form>
       <div >
         <h1>Preview</h1>
         <Card
-          card='50%'
+          card='200px'
           key={props.id}
           id={props.id}
           name={props.produto}
