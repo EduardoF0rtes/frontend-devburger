@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button';
 import styles from './Add.module.css';
+import {api} from '../../Services/Api.js'
 
 
 function Add() {
@@ -15,6 +16,23 @@ function Add() {
   const [produto, setProduto] = useState('Dev-X')
   const [preco, setPreco] = useState(15)
   const [descricao, setDescricao] = useState('Breve descricao')
+  const atualiza = (e) => {
+    e.preventDefault();
+    try {
+        fetch(api, {
+            method: 'POST',
+            body: JSON.stringify(item),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+        console.log('Enviado!')
+    } catch (error) {
+        console.error(error);
+    }
+}
 
   return (
     <div className={styles.form}>
@@ -22,15 +40,9 @@ function Add() {
         <Form
           title={'Adicione Novo Burger'}
           submit={(e) => atualiza(e)}
-          change1={(e) => {
-            setId(e.target.value)
-          }}
-          change2={(e) => {
-            setProduto(e.target.value)
-          }}
-          change3={(e) => {
-            setPreco(e.target.value)
-          }}
+          change1={(e) => setId(e.target.value)}
+          change2={(e) => setProduto(e.target.value)}
+          change3={(e) => setPreco(e.target.value)}
           change4={(e) => {
             setDescricao(e.target.value)
             setItem({
@@ -47,7 +59,7 @@ function Add() {
         />
       </section>
       <section>
-        <Button text='✔️' />
+        <Button click={(e) => atualiza(e)} text='✔️' />
         <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
       </section>
     </div>

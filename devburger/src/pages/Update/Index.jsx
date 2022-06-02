@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button'
 import styles from './Index.module.css'
+import {api} from '../../Services/Api.js';
 
 function UpdateProduto() {
     const [item, setItem] = useState({
@@ -14,7 +15,24 @@ function UpdateProduto() {
     const [produto, setProduto] = useState("Dev-Egg")
     const [preco, setPreco] = useState(16)
     const [descricao, setDescricao] = useState("Pão brioche com carne artesanal, queijo e ovo")
+    const update = (e) => {
+        e.preventDefault()
+        console.log('Melhoras Annanda')
+        try {
+            fetch(`${api}/${id}`, {
+                method: "PUT",
+                body: JSON.stringify(item),
+                headers: {
+                    "Content-Type": "application/json",
+                },
 
+            })
+                .then((res) => res.json())
+                .then((data) => console.log(data))
+        } catch (error) {
+            console.error(error)
+        }
+    }
     return (
         <div className={styles.form}>
             <section>
@@ -38,7 +56,7 @@ function UpdateProduto() {
                 />
             </section>
             <section>
-                <Button text='✔️' />
+                <Button click={(e)=> update(e)} text='✔️' />
                 <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
             </section>
 

@@ -12,23 +12,34 @@ function Form(props) {
       <form className={styles.form} onSubmit={props.submit}>
 
         <h1>{props.title}</h1><hr /><br />
-        <label htmlFor="">Id : </label>
-        <input type='number' onChange={props.change1} /> <br />
-        <label htmlFor="">Produto: </label>
-        <input type="text" onChange={props.change2} /> <br />
-        <label htmlFor="">Preco: </label>
-        <input type="number" onChange={props.change3} /> <br />
-        <label htmlFor="">Descrição: </label>
-        <input type="text" onChange={props.change4} /> <br /><br />
+        <div>
+          <input type='number' onChange={props.change1} />
+          <label htmlFor="">Id : </label><br />
+        </div>
+        <div>
+          <input type="text" onChange={props.change2} />
+          <label htmlFor="">Produto: </label><br />
+        </div>
+        <div>
+          <input type="number" onChange={props.change3} />
+          <label htmlFor="">Preco: </label><br />
+        </div>
+        <div>
+          <input type="text" onChange={props.change4} />
+          <label htmlFor="">Descrição: </label><br /><br />
+        </div>
+
+
+
         <div>
 
         </div>
-        
+
       </form>
       <div >
         <h1>Preview</h1>
         <Card
-          card='100%'
+          card='50%'
           key={props.id}
           id={props.id}
           name={props.produto}
