@@ -14,7 +14,6 @@ function Cardapio() {
             .then((data)=> {
                 setDados(data.rows)
                 setCardapio([...cardapio,data.rows])
-                console.log(dados);
             })
         } catch (err) {
             console.log('error:', err);
@@ -25,11 +24,14 @@ function Cardapio() {
             {dados.map((cardapio, index) => {
                 return (
                     <Card
+                  
             key={index}
+            card='25%'
             id={cardapio.id_produto}
             name={cardapio.produto}
             preco={cardapio.preco}
             descricao={cardapio.descricao}
+            
             />
                 )
             })}

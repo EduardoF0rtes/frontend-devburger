@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+    background-color: #EDA83B;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+}
+.form div{
+    position: relative;
+}
+.form input {
+    display: block;
+    transition: top .3s, left .3s;
+    position: relative;
+    top: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 2px 2px 2px black;
+    text-align: end;
+}
+
+.form input:focus {
+    background-color: rgb(189, 186, 186);
+}
+
+.Card {
+    border: 2px solid red;
+    font-size: 100px;
+}
+
+.form label {
+    transition: .2s linear;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
+    font: italic;
+    margin-left: 3%;
+}
+
+.form span {
+    display: none;
+}
+
+.form span:hover {
+    display: block;
+}
+.form input:focus + label {
+    top: -5px;
+    left: 0px;
+}
+.form input:focus + label {
+    top: -5px;
+    left: 0px;
+}

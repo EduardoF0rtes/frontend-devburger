@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    margin: 60px;
+    display: flex;
+}
+.btn button{
+    text-decoration: none;
+    background-color:#F2B544;
+    width: 2em;
+    height: 2em;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 100%;
+    margin: 2%;
+    padding: 0%;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+.btn button:hover {
+    width: 2.1em;
+    height: 2.1em;
+    border: red solid 1px;
+}
+.btn a{
+    text-decoration: none;
+}

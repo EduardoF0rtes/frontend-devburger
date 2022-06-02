@@ -6,7 +6,7 @@ import React from "react"
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CardapioPage from "./pages/Cardapio";
-import Edicao from "./pages/Edicao/Edicao";
+import Add from "./pages/Add/Add";
 import UpdateProduto from "./pages/Update/Index";
 
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} ></Route>
           <Route path='/cardapio' element={<CardapioPage />} ></Route>
-          <Route path='/edicao' element={<Edicao />} > Editar Card</Route>
+          <Route path='/add' element={<Add />} ></Route>
           <Route path='/update' element={<UpdateProduto />} > Editar Card</Route>
 
         </Routes>
