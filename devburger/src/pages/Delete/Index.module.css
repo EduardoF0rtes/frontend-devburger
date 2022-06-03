@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+
+.form section{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+Button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

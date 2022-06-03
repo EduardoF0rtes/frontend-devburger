@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CardapioPage from "./pages/Cardapio";
 import Add from "./pages/Add/Add";
 import UpdateProduto from "./pages/Update/Index";
+import DeleteProduto from "./pages/Delete/Index";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/cardapio' element={<CardapioPage />} ></Route>
           <Route path='/add' element={<Add />} ></Route>
           <Route path='/update' element={<UpdateProduto />} > Editar Card</Route>
+          <Route path= '/del' element={<DeleteProduto/>} > Deletar produto </Route>
 
         </Routes>
         <Footer />
