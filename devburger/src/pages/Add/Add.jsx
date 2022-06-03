@@ -3,6 +3,7 @@ import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button';
 import styles from './Add.module.css';
 import {api} from '../../Services/Api.js'
+import { toast } from 'react-toastify';
 
 
 function Add() {
@@ -29,11 +30,11 @@ function Add() {
             .then((res) => res.json())
             .then((data) => console.log(data))
         console.log('Enviado!')
+        toast.success('Adicionado com SUCESSO')
     } catch (error) {
         console.error(error);
     }
-}
-
+  }
   return (
     <div className={styles.form}>
       <section>

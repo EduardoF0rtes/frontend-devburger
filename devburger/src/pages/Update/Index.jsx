@@ -3,6 +3,7 @@ import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button'
 import styles from './Index.module.css'
 import {api} from '../../Services/Api.js';
+import { toast } from 'react-toastify';
 
 function UpdateProduto() {
     const [item, setItem] = useState({
@@ -29,8 +30,10 @@ function UpdateProduto() {
             })
                 .then((res) => res.json())
                 .then((data) => console.log(data))
+                toast.success('Atualizado com SUCESSO')
         } catch (error) {
             console.error(error)
+            toast.error('Atualização fora do padrão')
         }
     }
     return (

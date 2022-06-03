@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CardapioPage from "./pages/Cardapio";
 import Add from "./pages/Add/Add";
 import UpdateProduto from "./pages/Update/Index";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.min.css'
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      <ToastContainer/>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Cardapio from '../../components/Cardapio/Cardapio'
 import Button from '../../components/Button/Button'
 import styles from './index.module.css';
+import { ToastContainer } from 'react-toastify';
 function CardapioPage() {
   
   return (
@@ -14,6 +15,7 @@ function CardapioPage() {
             
             <br />
         </div>
+        <ToastContainer/>
     </div>
   )
 }
