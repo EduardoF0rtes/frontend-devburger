@@ -14,6 +14,7 @@
     position: relative;
     margin: auto;
     overflow: hidden;
+    
   }
   
   .active {
@@ -35,6 +36,7 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
+    
   }
   
   .slide-title,
