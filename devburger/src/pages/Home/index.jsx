@@ -8,7 +8,7 @@ function Home() {
     return (
         <div>
             <Slider />
-            {/* <div className={styles.segundo}>
+            <div className={styles.segundo}>
                 <div>
                    A Dev burger é uma Hamburgueria inovadora e em desenvolvimento.
                    Nós ja temos o nosso cardapio mas, aqui você é convidado a desenvolver 
@@ -18,10 +18,10 @@ function Home() {
                    Bora Desenvolver um Burger Cabuloso? 
                                         Click aqui ...
                 </div>
-                <div>
-                    UM GIF AQUI 
+                <div className={styles.segundoGif}>
+                <img src="./src/assets/imagens/areamaps.gif" alt="some text" height={300} width={300} ></img>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

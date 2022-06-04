@@ -1,13 +1,20 @@
 .segundo{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: gold solid 3px;
     justify-content: space-around;
+    align-items: center;
+    /* background-image: linear-gradient( to right, #202022, #878787); */
+    padding: 15%;
 }
+
 .segundo div{
-    width: 50%;
+    
+    width: 30%;
     font-size: 20px;
     align-items: center;
     text-align: center;
+
 }
