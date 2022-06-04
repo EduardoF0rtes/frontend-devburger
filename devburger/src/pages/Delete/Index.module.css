@@ -9,10 +9,14 @@
     width: 100%;
     justify-content: center;
     display: flex;
+    
+
 }
 
-Button{
+.Button{
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
 }
+
+

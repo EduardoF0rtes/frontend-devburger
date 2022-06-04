@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {api} from '../../Services/Api.js'
-import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button'
 import styles from "./Index.module.css"
+import FormDelete from '../../components/Form Delete/FormDelete.jsx'
 
 function DeleteProduto() {
     const [item, setItem] = useState({
@@ -33,7 +33,7 @@ function DeleteProduto() {
     return (
         <div className={styles.Form}>
 <section>
-<Form
+<FormDelete
 
 title= {'Deletar um item do cardapio:'}
 submit={(e) => del (e)}
@@ -51,7 +51,7 @@ id={id}
 </section>
 
 <section className={styles.Button}>
-<Button click={(e) => del (e)} text='❌'/>
+<Button click={(e) => del (e)} text='✔️' />
 <Button click={(e) => window.location.href = '../cardapio'} text = '↩️'/>
 
     
