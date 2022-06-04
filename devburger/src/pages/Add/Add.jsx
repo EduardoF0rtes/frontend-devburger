@@ -33,6 +33,7 @@ function Add() {
         toast.success('Adicionado com SUCESSO')
     } catch (error) {
         console.error(error);
+        toast.error('Adicionado fora do padrão')
     }
   }
   return (
