@@ -29,7 +29,7 @@ const Footer = (props) => {
                     </div>
                 </div>
                 <div className={style.logo}>
-                    <img src="./src/logo/DevBurger_logoFinal.png" alt="some text" height={200} width={200} ></img>
+                    <img src="./src/assets/imagens/hamburger.gif" alt="some text" height={200} width={200} ></img>
                 </div>
             </div>
 

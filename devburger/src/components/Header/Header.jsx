@@ -7,7 +7,7 @@ function Header() {
     <header className={styles.Header}>
         <div className={styles.img}>
             <a class="navbar-brand" id="logo">
-                <img src="./src/logo/DevBurger_logoFinal.png" alt="some text" height={200} width={200} ></img></a>
+                <img src="./src/assets/imagens/DevBurger_logoFinal.png" alt="some text" height={200} width={200} ></img></a>
         </div>
         <div className={styles.nav}>
             <ul className={styles.ul}> 
