@@ -4,11 +4,11 @@ import styles from "../Carousel/Carousel.module.css"
 function Carousel({activeIndex, ImagensCarousel}) {
   return (
 
-    <section className={styles.section}>
+    <section >
       {ImagensCarousel.map((slide, index) => (
         <div
         key={index}
-          className={index === activeIndex ? "slider active": "inactive"}
+          className={index === activeIndex ? "slides active": "inactive"}
 >
           
           <img className='slide-image' src={slide.urls} alt="" />

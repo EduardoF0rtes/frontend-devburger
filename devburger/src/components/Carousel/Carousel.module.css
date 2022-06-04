@@ -1,11 +1,14 @@
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-  }
   .section{
-    overflow: hidden;
-    color: transparent;
+    
+   
+    height: 0%;
+
+
 
   }
   
+  index {
+    border: solid 2px rgb(255, 94, 0);
+    ;
+  }
