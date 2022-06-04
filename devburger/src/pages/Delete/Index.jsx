@@ -3,6 +3,7 @@ import {api} from '../../Services/Api.js'
 import Button from '../../components/Button/Button'
 import styles from "./Index.module.css"
 import FormDelete from '../../components/Form Delete/FormDelete.jsx'
+import { toast } from 'react-toastify'
 
 function DeleteProduto() {
     const [item, setItem] = useState({
@@ -26,8 +27,10 @@ function DeleteProduto() {
                 .then((res) => res.json())
                 .then((data) => console.log(data))
                 console.log('Produto deletado com sucesso')
+                toast.success('Deletado com SUCESSO')
         } catch (error) {
             console.log(error)
+            toast.error('Deletado fora do padrão')
         }
     }
     return (
