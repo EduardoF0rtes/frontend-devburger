@@ -9,7 +9,7 @@ const Footer = (props) => {
                 <div className={style.mapaDoSite}>
                     <h3>Mapa do Site</h3>
                     <a href='#'>Home</a>
-                    <a href="#">Cardápio</a>
+                    <a href="/cardapio">Cardápio</a>
                     <a href="#">Sobre Nós</a>
                 </div>
                 <div className={style.sigaNos}>
