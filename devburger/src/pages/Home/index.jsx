@@ -2,26 +2,30 @@ import React from 'react';
 import Header from "../../components/Header/Header";
 import Slider from "../../components/Slider/Slider";
 import styles from './index.module.css';
+import Banner from "../../assets/imagens/Banner.png"
 
 
 function Home() {
     return (
-        <div>
+        <div className={styles.Container}>
             <Slider />
-            {/* <div className={styles.segundo}>
-                <div>
-                   A Dev burger é uma Hamburgueria inovadora e em desenvolvimento.
-                   Nós ja temos o nosso cardapio mas, aqui você é convidado a desenvolver 
+            <div className={styles.segundo}>
+                <div className={styles.Sobre}>
+                    <h1> Sobre nós  </h1>
+                   A <i> Dev Burger </i> surgiu como uma alternativa para aprimorar e inovar o seu empreendimento.
+                   Nós ja temos o nosso cardapio mas aqui você é convidado a desenvolver o
                    seu proprio BURGER. 
-                   Do seu jeito, escolha o Pão, o Recheio, os molhos, com carnes ou vegetarias,
-                   Vocês é que mandam ... 
-                   Bora Desenvolver um Burger Cabuloso? 
-                                        Click aqui ...
+                   Do seu jeito: Escolha o pão, o recheio, os molhos, com carnes ou vegetais,
+                   você é que manda! 
+                    Bora desenvolver o seu burger hoje? 
+                                        
                 </div>
-                <div>
-                    UM GIF AQUI 
+                <div className={styles.Banner}>
+                    <h1> O queridinho da semana: </h1>
+                    <img src={Banner}  height={600} width={600}/>
+
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

@@ -1,9 +1,19 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
 .segundo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     width: 100%;
     height: auto;
-    border: gold solid 3px;
-    justify-content: space-around;
+   
+    
 }
 .segundo div{
     width: 50%;
