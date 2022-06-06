@@ -8,11 +8,10 @@
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     /* background-image: linear-gradient( to right, #202022, #878787); */
-    background-image: url("../../assets/imagens/bg-devbr.jpg");
-  
+    background-image: url("../../assets/imagens/bg-devbr.jpg");   
     justify-content: space-evenly;
 }
 
