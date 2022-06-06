@@ -1,33 +1,29 @@
 import React, { useState } from 'react'
-import {api} from '../../Services/Api.js'
+import { api } from '../../Services/Api.js'
 import Button from '../../components/Button/Button'
 import styles from "./Index.module.css"
 import FormDelete from '../../components/Form Delete/FormDelete.jsx'
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 function DeleteProduto() {
     const [item, setItem] = useState({
         id_produto: 1,
- 
+
     })
 
     const [id, setId] = useState(1)
     const del = (e) => {
         e.preventDefault()
         console.log('Produto deletado')
+        console.log(`${api}/${id}`)
         try {
-            fetch(`${api}/${id}}`, {
-                method: "DELETE",
-                body: JSON.stringify(item),
-                headers: {
-                    "Content-type": "application/json",
-                },
-            })
-
-                .then((res) => res.json())
-                .then((data) => console.log(data))
-                console.log('Produto deletado com sucesso')
+            axios.delete(`${api}/${id}`)
+            .then(res => {
+                res.json
                 toast.success('Deletado com SUCESSO')
+            } )
+
         } catch (error) {
             console.log(error)
             toast.error('Deletado fora do padrão')
@@ -35,30 +31,26 @@ function DeleteProduto() {
     }
     return (
         <div className={styles.Form}>
-<section>
-<FormDelete
+            <section>                <FormDelete
 
-title= {'Deletar um item do cardapio:'}
-submit={(e) => del (e)}
-change1={(e) => setId(e.target.value)}
-change2= {(e) => {
-    setItem({
-        id
-    })
-}}
-id={id}
+                    title={'Deletar um item do cardapio:'}
+                    submit={(e) => del(e)}
+                    change1={(e) => {
+                        setId(e.target.value)
+                        console.log(id)
+                    }}
 
-/>
+                />
 
 
-</section>
+            </section>
 
-<section className={styles.Button}>
-<Button click={(e) => del (e)} text='✔️' />
-<Button click={(e) => window.location.href = '../cardapio'} text = '↩️'/>
+            <section className={styles.Button}>
+                <Button click={(e) => del(e)} text='✔️' />
+                <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
 
-    
-</section>
+
+            </section>
 
 
 

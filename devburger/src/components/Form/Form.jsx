@@ -3,6 +3,9 @@ import styles from "./Form.module.css"
 import Card from '../Cards/Card'
 
 function Form(props) {
+const onMouse = (e)=>{
+  
+}
 
   return (
 
@@ -12,11 +15,12 @@ function Form(props) {
         <h1>{props.title}</h1><hr /><br />
         <div>
           <input type='number' onChange={props.change1} />
-          <label htmlFor=""> Id : </label><br />
+          <label htmlFor="">Id : </label><br />
+          <span>Escreva um id</span>
         </div>
         <div>
           <input type="text" onChange={props.change2} />
-          <label htmlFor=""> Produto: </label><br />
+          <label htmlFor="">Produto: </label><br />
         </div>
         <div>
           <input type="number" onChange={props.change3} />
@@ -28,7 +32,7 @@ function Form(props) {
         </div>
       </form>
       <div >
-        <h1 className={styles.Preview}>Preview</h1>
+        <h1>Preview</h1>
         <Card
           card='200px'
           key={props.id}

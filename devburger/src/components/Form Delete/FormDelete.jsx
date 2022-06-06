@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./FormDelete.module.css"
-import Card from '../Cards/Card'
 
 
 function FormDelete(props) {
@@ -17,18 +16,7 @@ function FormDelete(props) {
         </div>
         
       </form>
-      <div >
-        
-        <Card
-          card='200px'
-          key={props.id}
-          id={props.id}
-          name={props.produto}
-          preco={props.preco}
-          descricao={props.descricao}
-        />
 
-      </div>
     </div>
   )
 }

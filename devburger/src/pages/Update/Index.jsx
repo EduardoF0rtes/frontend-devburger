@@ -2,23 +2,22 @@ import React, { useState } from 'react'
 import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button'
 import styles from './Index.module.css'
-import {api} from '../../Services/Api.js';
+import { api } from '../../Services/Api.js';
 import { toast } from 'react-toastify';
 
 function UpdateProduto() {
     const [item, setItem] = useState({
-        id_produto: 1,
-        produto: "Dev-Egg",
-        preco: 16,
-        descricao: "Pão brioche com carne artesanal, queijo e ovo"
+        id_produto: '',
+        produto: '',
+        preco: '',
+        descricao: ''
     })
-    const [id, setId] = useState(1)
-    const [produto, setProduto] = useState("Dev-Egg")
-    const [preco, setPreco] = useState(16)
-    const [descricao, setDescricao] = useState("Pão brioche com carne artesanal, queijo e ovo")
+    const [id, setId] = useState("")
+    const [produto, setProduto] = useState("")
+    const [preco, setPreco] = useState("")
+    const [descricao, setDescricao] = useState("")
     const update = (e) => {
         e.preventDefault()
-        console.log('Melhoras Annanda')
         try {
             fetch(`${api}/${id}`, {
                 method: "PUT",
@@ -29,11 +28,17 @@ function UpdateProduto() {
 
             })
                 .then((res) => res.json())
-                .then((data) => console.log(data))
-                toast.success('Atualizado com SUCESSO')
+                .then((data) => {
+                    console.log(data)
+                    if (data.message == undefined) {
+                        toast.error(data.erro)
+                    } else {
+                        toast.success(data.message)
+                    }
+                })
         } catch (error) {
             console.error(error)
-            toast.error('Atualização fora do padrão')
+            toast.error(data.erro)
         }
     }
     return (
@@ -59,7 +64,7 @@ function UpdateProduto() {
                 />
             </section>
             <section>
-                <Button click={(e)=> update(e)} text='✔️' />
+                <Button click={(e) => update(e)} text='✔️' />
                 <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
             </section>
 
