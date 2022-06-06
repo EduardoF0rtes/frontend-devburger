@@ -12,7 +12,7 @@ function Header() {
         <div className={styles.nav}>
             <ul className={styles.ul}> 
                 < a href="/"><li> Home </li></a>
-                < a href="/cardapio"><li> Cárdapio </li></a>
+                < a href="/cardapio"><li> Cardápio </li></a>
                 {/* < a href="#"><li> Clientes </li></a> */}
                 < a href="#"><li> Sobre Nós </li></a>
             </ul>

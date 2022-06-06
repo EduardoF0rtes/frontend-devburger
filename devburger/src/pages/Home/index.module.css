@@ -1,20 +1,53 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .segundo{
     display: flex;
     width: 100%;
-    height: 600px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: gold solid 3px;
-    justify-content: space-around;
+    height: 55vh;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-evenly;
     align-items: center;
-    /* background-image: linear-gradient( to right, #202022, #878787); */
     padding: 15%;
+   
 }
 
 .segundo div{
     
-    width: 30%;
+    width: 35vw;
     font-size: 20px;
     align-items: center;
     text-align: center;
 
+}
+
+.Sobre{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Banner{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("../../assets/imagens/DevBg.jpg");
+   
+}
+
+.Banner h1{
+    margin-top: 7px;
+    color: whitesmoke; 
+}
+
+.Banner i{
+    text-decoration: underline;
+}
+
+.Banner img{
+    margin-top: 10px;
 }
