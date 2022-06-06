@@ -8,9 +8,11 @@
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
-    background-image: linear-gradient( to right, #202022, #878787);
+    /* background-image: linear-gradient( to right, #202022, #878787); */
+    background-image: url("../../assets/imagens/bg-devbr.jpg");
+  
     justify-content: space-evenly;
 }
 
