@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import Form from '../../components/Form/Form'
 import Button from '../../components/Button/Button';
 import styles from './Add.module.css';
-import {api} from '../../Services/Api.js'
+import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
 
 
 function Add() {
   const [item, setItem] = useState({
-    id_produto: 100,
-    produto: 'Dev-X',
-    preco: 99,
-    descricao: 'Descrição produto'
+    id_produto: '',
+    produto: '',
+    preco: '',
+    descricao: ''
   });
   const [id, setId] = useState(99)
   const [produto, setProduto] = useState('Dev-X')
@@ -20,21 +20,30 @@ function Add() {
   const atualiza = (e) => {
     e.preventDefault();
     try {
-        fetch(api, {
-            method: 'POST',
-            body: JSON.stringify(item),
-            headers: {
-                'Content-Type': 'application/json',
-            },
+      fetch(api, {
+        method: 'POST',
+        body: JSON.stringify(item),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data)
+          if (data.message == undefined) {
+            toast.error(data.erro)
+          } else {
+            toast.success(data.message)
+          }
         })
-            .then((res) => res.json())
-            .then((data) => console.log(data))
-        console.log('Enviado!')
-        toast.success('Adicionado com SUCESSO')
     } catch (error) {
-        console.error(error);
-        toast.error('Adicionado fora do padrão')
+      // console.error(error);
+      toast.error(data.erro)
     }
+    // console.log('Enviado!')
+
+
+
   }
   return (
     <div className={styles.form}>
