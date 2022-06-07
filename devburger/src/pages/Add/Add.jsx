@@ -4,7 +4,7 @@ import Button from '../../components/Button/Button';
 import styles from './Add.module.css';
 import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
-
+import { FaCheck, FaUndoAlt } from "react-icons/fa";
 
 function Add() {
   const [item, setItem] = useState({
@@ -70,8 +70,8 @@ function Add() {
         />
       </section>
       <section>
-        <Button click={(e) => atualiza(e)} text='✔️' />
-        <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
+        <Button click={(e) => atualiza(e)} text={<FaCheck color='#52BF4E'/>} />
+        <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
       </section>
     </div>
   )

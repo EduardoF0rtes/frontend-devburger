@@ -5,6 +5,7 @@ import styles from "./Index.module.css"
 import FormDelete from '../../components/Form Delete/FormDelete.jsx'
 import { toast } from 'react-toastify'
 import axios from 'axios'
+import { FaRegTrashAlt, FaUndoAlt } from "react-icons/fa";
 
 function DeleteProduto() {
     const [item, setItem] = useState({
@@ -46,8 +47,8 @@ function DeleteProduto() {
             </section>
 
             <section className={styles.Button}>
-                <Button click={(e) => del(e)} text='✔️' />
-                <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
+                <Button click={(e) => del(e)} text={<FaRegTrashAlt color='#BF4124' />} />
+                <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
 
 
             </section>
