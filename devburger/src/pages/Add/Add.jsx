@@ -5,6 +5,10 @@ import styles from './Add.module.css';
 import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
 import { FaCheck, FaUndoAlt } from "react-icons/fa";
+=======
+import Foto from '../../assets/imagens/Dev Furioso.jpg'
+
+>>>>>>> Stashed changes
 
 function Add() {
   const [item, setItem] = useState({
@@ -14,6 +18,7 @@ function Add() {
     descricao: ''
   });
   const [id, setId] = useState(99)
+  const [imagem, setImagem] = useState({Foto})
   const [produto, setProduto] = useState('Dev-X')
   const [preco, setPreco] = useState(15)
   const [descricao, setDescricao] = useState('Breve descricao')
@@ -58,12 +63,14 @@ function Add() {
             setDescricao(e.target.value)
             setItem({
               id,
+              imagem,
               produto,
               preco,
               descricao
             })
           }}
           id={id}
+          imagem={Foto}
           produto={produto}
           preco={preco}
           descricao={descricao}

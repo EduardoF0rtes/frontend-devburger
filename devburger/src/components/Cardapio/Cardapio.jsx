@@ -5,40 +5,45 @@ import { api } from '../../Services/Api';
 
 
 function Cardapio() {
-        const [dados, setDados] = useState([{}]);
-        const [cardapio, setCardapio] = useState([]);      
-            useEffect(() => {
-        try{
+    const [dados, setDados] = useState([{}]);
+    const [cardapio, setCardapio] = useState([]);
+    useEffect(() => {
+        try {
             fetch(api)
-            .then((response) => response.json())
-            .then((data)=> {
-                setDados(data.rows)
-                setCardapio([...cardapio,data.rows])
-            })
+                .then((response) => response.json())
+                .then((data) => {
+                    setDados(data.rows)
+                    setCardapio([...cardapio, data.rows])
+                })
         } catch (err) {
             console.log('error:', err);
         }
-    },[]); 
+    }, []);
     return (
         <div className={style.cardapio}>
             {dados.map((cardapio, index) => {
                 return (
-                    <Card
-                  
-            key={index}
-            card='25%'
-            id={cardapio.id_produto}
-            name={cardapio.produto}
-            preco={cardapio.preco}
-            descricao={cardapio.descricao}
-            
-            />
+                    <div>
+                        <div>
+                            <Card
+
+                                key={index}
+                                imagem="https://cdn.icon-icons.com/icons2/1555/PNG/512/fast-food-icons-freeburger_107425.png"
+                                card='25%'
+                                id={cardapio.id_produto}
+                                name={cardapio.produto}
+                                preco={cardapio.preco}
+                                descricao={cardapio.descricao}
+                            />
+                        </div>
+                    </div>
+
                 )
             })}
-            
+
         </div>
-        
-    )   
+
+    )
 }
 
 export default Cardapio

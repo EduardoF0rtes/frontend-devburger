@@ -32,10 +32,11 @@ const onMouse = (e)=>{
         </div>
       </form>
       <div >
-        <h1>Preview</h1>
+        <h1>Preview</h1> <hr /><br />
         <Card
           card='200px'
           key={props.id}
+          imagem={props.imagem}
           id={props.id}
           name={props.produto}
           preco={props.preco}
