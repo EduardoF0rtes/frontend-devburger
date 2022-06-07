@@ -4,6 +4,8 @@ import Button from '../../components/Button/Button'
 import styles from './Index.module.css'
 import { api } from '../../Services/Api.js';
 import { toast } from 'react-toastify';
+import { FaWrench, FaUndoAlt } from "react-icons/fa";
+
 
 function UpdateProduto() {
     const [item, setItem] = useState({
@@ -64,8 +66,8 @@ function UpdateProduto() {
                 />
             </section>
             <section>
-                <Button click={(e) => update(e)} text='✔️' />
-                <Button click={(e) => window.location.href = '../cardapio'} text='↩️' />
+                <Button click={(e) => update(e)} text={<FaWrench  />} />
+                <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
             </section>
 
         </div>
