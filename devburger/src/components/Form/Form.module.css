@@ -19,8 +19,9 @@
 .form div{
     position: relative;
 }
-.form input, textarea {
+.form input, textarea, select {
     display: block;
+    width: 17vw;
     transition: top .3s, left .3s;
     position: relative;
     top: 5px;
@@ -31,7 +32,7 @@
     text-align: end;
 }
 
-.form input:focus {
+.form input:focus, textarea:focus, select:focus {
     background-color: rgb(189, 186, 186);
 }
 
@@ -62,7 +63,11 @@
     top: -5px;
     left: 0px;
 }
-.form input:focus + label {
+.form select:focus + label{
+    top: -5px;
+    left: 0px;
+}
+.form textarea:focus + label{
     top: -5px;
     left: 0px;
 }

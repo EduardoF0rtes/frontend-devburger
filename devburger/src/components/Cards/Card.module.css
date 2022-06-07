@@ -40,15 +40,19 @@
     height:200px;
     backface-visibility: hidden;
     padding: 10px;
-    border-radius: 5px;
-    margin: auto auto;
-    border: #F2B544 solid 1px;
+    border-radius: 20px;
+    margin: auto auto;    
     -webkit-backface-visibility: hidden; 
+    box-shadow: 5px 5px black;
+}
+.front img{
+    border-radius: 20px;
 }
 
 .back {
     transform: rotateY(180deg);
-    background-color: gray;
+    background-color: rgb(205, 203, 203);
+    border: #F2B544 solid 1px;
     
     
 }

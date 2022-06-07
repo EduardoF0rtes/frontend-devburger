@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import style from './Cardapio.module.css'
 import Card from '../Cards/Card';
 import { api } from '../../Services/Api';
+import { burger1 } from '../Fotos/Fotos';
+
 
 
 function Cardapio() {
@@ -28,7 +30,7 @@ function Cardapio() {
                             <Card
 
                                 key={index}
-                                imagem="https://cdn.icon-icons.com/icons2/1555/PNG/512/fast-food-icons-freeburger_107425.png"
+                                imagem={burger1[cardapio.id_produto]}
                                 card='25%'
                                 id={cardapio.id_produto}
                                 name={cardapio.produto}

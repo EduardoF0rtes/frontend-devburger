@@ -16,7 +16,6 @@ const onMouse = (e)=>{
         <div>
           <input type='number' onChange={props.change1} />
           <label htmlFor="">Id : </label><br />
-          <span>Escreva um id</span>
         </div>
         <div>
           <input type="text" onChange={props.change2} />
@@ -29,6 +28,17 @@ const onMouse = (e)=>{
         <div>
           <textarea type="text" onChange={props.change4} />
           <label htmlFor="">Descrição: </label><br /><br />
+        </div>        
+        <div>
+          <select name="imagem" id="" onChange={props.change5}>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+          <label htmlFor="">Imagem: </label><br /><br />
         </div>
       </form>
       <div >

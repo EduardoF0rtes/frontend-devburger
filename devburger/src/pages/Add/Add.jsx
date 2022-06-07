@@ -5,10 +5,7 @@ import styles from './Add.module.css';
 import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
 import { FaCheck, FaUndoAlt } from "react-icons/fa";
-=======
-import Foto from '../../assets/imagens/Dev Furioso.jpg'
-
->>>>>>> Stashed changes
+import { burger1 } from '../../components/Fotos/Fotos';
 
 function Add() {
   const [item, setItem] = useState({
@@ -18,7 +15,7 @@ function Add() {
     descricao: ''
   });
   const [id, setId] = useState(99)
-  const [imagem, setImagem] = useState({Foto})
+  const [imagem, setImagem] = useState(3)
   const [produto, setProduto] = useState('Dev-X')
   const [preco, setPreco] = useState(15)
   const [descricao, setDescricao] = useState('Breve descricao')
@@ -42,13 +39,9 @@ function Add() {
           }
         })
     } catch (error) {
-      // console.error(error);
+
       toast.error(data.erro)
     }
-    // console.log('Enviado!')
-
-
-
   }
   return (
     <div className={styles.form}>
@@ -59,6 +52,7 @@ function Add() {
           change1={(e) => setId(e.target.value)}
           change2={(e) => setProduto(e.target.value)}
           change3={(e) => setPreco(e.target.value)}
+          change5={(e)=> setImagem(e.target.value)}
           change4={(e) => {
             setDescricao(e.target.value)
             setItem({
@@ -70,15 +64,15 @@ function Add() {
             })
           }}
           id={id}
-          imagem={Foto}
+          imagem={burger1[imagem]}
           produto={produto}
           preco={preco}
           descricao={descricao}
         />
       </section>
       <section>
-        <Button click={(e) => atualiza(e)} text={<FaCheck color='#52BF4E'/>} />
-        <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
+        <Button click={(e) => atualiza(e)} text={<FaCheck color='#52BF4E' />} />
+        <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white' />} />
       </section>
     </div>
   )
