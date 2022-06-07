@@ -1,17 +1,24 @@
 .cardapio{
-    display: flex;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;  
     justify-content: space-between;
     margin-top: 60px;
     height: 100vh;
-    margin: 5vh 5vw;
-    width: 60%;
-   
+    margin: 5vh 10vw;   
+    width: 70%;
+      
 }
 
 @media (max-width: 991px) {
 .cardapio {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin: auto;
+    padding: auto;
+    width: auto;
+
+    
+
     }
     
 }

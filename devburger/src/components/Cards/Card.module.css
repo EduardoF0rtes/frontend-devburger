@@ -2,6 +2,8 @@
     width: 300px;
     height: 200px;
     perspective: 1000px;
+   
+    
 }
 
 .item {
@@ -16,6 +18,7 @@
     -webkit-line-clamp: 50;
     -webkit-box-orient: vertical;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     width: 300px;
     height:200px;
     transition: transform 0.8s;
@@ -64,15 +67,24 @@
 }
 
 @media (max-width: 991px) {
+
+    .container{
+        height: 100px;
+    }
     .item {
-        padding: 5vh;
+        
         display: flex;
-        width: 35vh;
-        margin: 3vh auto;
+        width: 20vh;
+        margin: 3vh;
+        
     }
 
     .item img {
         width: 15vh;
     }
-
+    .front,
+.back { 
+    width:200px;
+    height:120px;
+}
 }
