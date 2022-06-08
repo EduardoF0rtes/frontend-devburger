@@ -13,7 +13,7 @@ function Add() {
     produto: '',
     preco: '',
     descricao: '',
-    imagem: ''
+    imagem: burger1[7]
   });
   const [id, setId] = useState(99)  
   const [produto, setProduto] = useState('Dev-X')
