@@ -15,3 +15,10 @@ ____
 
 
 ____
+<hr>
+<p>  Desenvolvemos um site que auxilia
+estabelecimentos do ramo alimenticio na criação e administração do seu cardapio online. 
+Utilizando a plataforma, o cliente pode criar um cardapio online, adicionar itens, atualizar informações e ate mesmo remover itens do cardapio.
+</p>     
+
+<img src="./src/assets/imagens/Card1.jpeg" alt="">
