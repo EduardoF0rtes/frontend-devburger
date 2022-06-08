@@ -1,6 +1,6 @@
 import style from './Footer.module.css'
 import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare, FaAndroid, FaApple } from 'react-icons/fa'
-
+import gif from "../../assets/imagens/hamburger.gif"
 const Footer = (props) => {
     return (
         <div className={style.footer}>
@@ -29,7 +29,7 @@ const Footer = (props) => {
                     </div>
                 </div>
                 <div className={style.logo}>
-                    <img src="./src/assets/imagens/hamburger.gif" alt="some text" height={200} width={200} ></img>
+                    <img src={gif} alt="some text" height={200} width={200} />
                 </div>
             </div>
 

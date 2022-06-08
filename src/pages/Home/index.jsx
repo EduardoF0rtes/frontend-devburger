@@ -4,6 +4,7 @@ import Slider from "../../components/Slider/Slider";
 import styles from './index.module.css';
 import Banner from "../../assets/imagens/Banner.png"
 import Sobre from '../../assets/imagens/Sobre1.png'
+import map from "../../assets/imagens/areamaps.gif"
 
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
                    
 
                     <div className={styles.segundoGif}>
-                        <img src="./src/assets/imagens/areamaps.gif" alt="some text" height={300} width={300} ></img>
+                        <img src={map} alt="some text" height={300} width={300} />
                     </div>
                 </div>
                 <div className={styles.Banner}>
