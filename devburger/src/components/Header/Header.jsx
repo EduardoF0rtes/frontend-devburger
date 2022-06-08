@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Header/Header.module.css"
 
+
 function Header() {
 
     return (
@@ -14,7 +15,7 @@ function Header() {
                 < a href="/"><li> Home </li></a>
                 < a href="/cardapio"><li> Cardápio </li></a>
                 {/* < a href="#"><li> Clientes </li></a> */}
-                < a href="#"><li> Sobre Nós </li></a>
+                < a href="/Sobre"><li> Sobre Nós </li></a>
             </ul>
         </div>
 

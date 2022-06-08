@@ -11,6 +11,8 @@ import UpdateProduto from "./pages/Update/Index";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
 import DeleteProduto from "./pages/Delete/Index";
+import PageSobre from "./pages/Sobre/PageSobre";
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <Route path='/add' element={<Add />} ></Route>
           <Route path='/update' element={<UpdateProduto />} > Editar Card</Route>
           <Route path= '/del' element={<DeleteProduto/>} > Deletar produto </Route>
+          <Route path='/Sobre' element={<PageSobre/>}></Route>
 
         </Routes>
         <Footer />

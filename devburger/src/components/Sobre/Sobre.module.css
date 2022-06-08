@@ -1,0 +1,31 @@
+.Sobre{
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+}
+
+.imagem{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 40vh;
+    
+}
+
+.equipe{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px; 
+    justify-content: space-around;
+}
+
+.dev{
+border-radius: 5px;
+-webkit-backdrop-filter: blur( 13.5px );
+backdrop-filter: blur( 13.5px );    
+box-shadow: 0 0 1em black;
+height: 20vh;
+text-align: center;
+opacity: .8;
+color: black;
+
+}
