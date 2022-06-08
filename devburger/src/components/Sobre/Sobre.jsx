@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './Sobre.module.css'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import nanda from '../../assets/imagens/nanda.jpg'
-// import cesar from '../../assets/imagens/cesar.jfif'
-// import edu from '../../assets/imagens/edu.jfif'
+// import cesar from '../../assets/imagens/cesar.jpeg'
+// import edu from '../../assets/imagens/edu.jpeg'
 import rapha from '../../assets/imagens/rapha.jpeg'
 
 function Sobre() {
