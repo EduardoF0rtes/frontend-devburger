@@ -10,12 +10,6 @@ function Sobre() {
   return (
     <div className={styles.Sobre}>
 
-
-      {/* <div className={styles.imagem}>
-        
-
-      </div> */}
-
       <div className={styles.equipe}> 
      
       <div className={styles.dev}>
