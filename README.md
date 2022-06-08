@@ -22,3 +22,56 @@ Utilizando a plataforma, o cliente pode criar um cardapio online, adicionar iten
 </p>     
 
 ![Imagem do Front Card](https://github.com/EduardoF0rtes/frontend-devburger/blob/36f73237031224af5ee8a592ca2845783f764ae4/devburger/src/assets/imagens/print/Card1.jpeg)
+![Imagem do Back Card](https://github.com/EduardoF0rtes/frontend-devburger/blob/36f73237031224af5ee8a592ca2845783f764ae4/devburger/src/assets/imagens/print/Card2.jpeg)
+
+Gostaria de utilizar essa plataforma também ?
+Vou te mostrar como.
+
+____
+#### 🪛Ferramentas utilizadas:
+• [Vite](https://vitejs.dev/config/)
+
+• [ReactJs](https://pt-br.reactjs.org/)
+
+• [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+• [React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)
+
+• [React-toastify](https://www.npmjs.com/package/react-toastify)
+____
+#### ⚙️Dependências:
+```js
+  {
+    "axios": "^0.27.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.3"
+  }
+```
+Para iniciar este projeto você pode copiar o código abaixo e colar no terminal (Crtl + shift + v), para fazer o clone deste repositório e instalar as dependencias.
+
+```
+git clone https://github.com/EduardoF0rtes/frontend-devburger.git && cd .\devburger\ && npm install 
+```
+____
+### ⚙️Depêndecias de desenvolvimento:
+```js 
+  {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.9"
+  }
+  ```
+____
+## Para utilizar a aplicação 
+Inicie o terminal e rode com: 
+```js
+npm run dev
+```
+____
+# ➡️Endpoint:
+
+- Cardapio
