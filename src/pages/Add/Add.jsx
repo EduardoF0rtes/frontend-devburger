@@ -13,7 +13,7 @@ function Add() {
     produto: '',
     preco: '',
     descricao: '',
-    imagem: burger1[7]
+    imagem: 0
   });
   const [id, setId] = useState(99)  
   const [produto, setProduto] = useState('Dev-X')
@@ -73,7 +73,7 @@ function Add() {
       </section>
       <section>
         <Button click={(e) => atualiza(e)} text={<FaCheck color='#52BF4E' />} />
-        <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white' />} />
+        {/* <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white' />} /> */}
       </section>
     </div>
   )
