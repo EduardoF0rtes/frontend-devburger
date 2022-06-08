@@ -14,11 +14,11 @@ function Add() {
     preco: '',
     descricao: ''
   });
-  const [id, setId] = useState(99)
-  const [imagem, setImagem] = useState(3)
-  const [produto, setProduto] = useState('Dev-X')
-  const [preco, setPreco] = useState(15)
-  const [descricao, setDescricao] = useState('Breve descricao')
+  const [id, setId] = useState(" ")
+  const [imagem, setImagem] = useState(" ")
+  const [produto, setProduto] = useState(" ")
+  const [preco, setPreco] = useState(" ")
+  const [descricao, setDescricao] = useState(" ")
   const atualiza = (e) => {
     e.preventDefault();
     try {

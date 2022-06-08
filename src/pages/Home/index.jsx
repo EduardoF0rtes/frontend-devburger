@@ -26,7 +26,7 @@ function Home() {
                     </div>
                 </div>
                 <div className={styles.Banner}>
-                    <h1> O queridinho da semana: </h1>
+                    <h1> O queridinho da semana: </h1><br/> 
 
                     <img src={Banner} height={530} width={530} />
 
