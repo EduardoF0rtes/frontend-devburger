@@ -26,10 +26,6 @@ const onMouse = (e)=>{
           <label htmlFor="">Preco: </label><br />
         </div>
         <div>
-          <textarea type="text" onChange={props.change4} />
-          <label htmlFor="">Descrição: </label><br /><br />
-        </div>        
-        <div>
           <select name="imagem" id="" onChange={props.change5}>
             <option value="10">10</option>
             <option value="11">11</option>
@@ -40,16 +36,21 @@ const onMouse = (e)=>{
           </select>
           <label htmlFor="">Imagem: </label><br /><br />
         </div>
+        <div>
+          <textarea type="text" onChange={props.change4} />
+          <label htmlFor="">Descrição: </label><br /><br />
+        </div>        
+        
       </form>
       <div >
         <h1>Preview</h1> <hr /><br />
         <Card
           card='200px'
-          key={props.id}
-          imagem={props.imagem}
+          key={props.id}          
           id={props.id}
           name={props.produto}
           preco={props.preco}
+          imagem={props.imagem}
           descricao={props.descricao}
         />
 

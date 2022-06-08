@@ -30,12 +30,12 @@ function Cardapio() {
                             <Card
 
                                 key={index}
-                                imagem={burger1[cardapio.id_produto]}
                                 card='25%'
                                 id={cardapio.id_produto}
                                 name={cardapio.produto}
-                                preco={cardapio.preco}
-                                descricao={cardapio.descricao}
+                                preco={cardapio.preco} 
+                                descricao={cardapio.descricao}                                                               
+                                imagem={burger1[cardapio.id_produto]}
                             />
                         </div>
                     </div>

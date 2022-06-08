@@ -12,13 +12,14 @@ function Add() {
     id_produto: '',
     produto: '',
     preco: '',
-    descricao: ''
+    descricao: '',
+    imagem: ''
   });
-  const [id, setId] = useState(99)
-  const [imagem, setImagem] = useState(3)
+  const [id, setId] = useState(99)  
   const [produto, setProduto] = useState('Dev-X')
   const [preco, setPreco] = useState(15)
   const [descricao, setDescricao] = useState('Breve descricao')
+  const [imagem, setImagem] = useState(3)
   const atualiza = (e) => {
     e.preventDefault();
     try {
@@ -56,17 +57,17 @@ function Add() {
           change4={(e) => {
             setDescricao(e.target.value)
             setItem({
-              id,
-              imagem,
+              id,              
               produto,
               preco,
-              descricao
+              descricao,
+              imagem
             })
           }}
-          id={id}
-          imagem={burger1[imagem]}
+          id={id}          
           produto={produto}
           preco={preco}
+          imagem={burger1[imagem]}
           descricao={descricao}
         />
       </section>
