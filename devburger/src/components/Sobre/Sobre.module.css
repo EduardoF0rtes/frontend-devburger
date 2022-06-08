@@ -1,21 +1,24 @@
 .Sobre{
    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 90vh;
+  background-image: url('../../assets/imagens/equipe.jfif');
+  background-size: cover;
+ background-position: 0%;
+  
+  
+  
 }
 
-.imagem{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    height: 40vh;
-    
-}
 
 .equipe{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px; 
     justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+    
+    
 }
 
 .dev{
@@ -23,9 +26,64 @@ border-radius: 5px;
 -webkit-backdrop-filter: blur( 13.5px );
 backdrop-filter: blur( 13.5px );    
 box-shadow: 0 0 1em black;
-height: 20vh;
+height: 40vh;
 text-align: center;
 opacity: .8;
-color: black;
+align-items: center;
+padding: 10px;
+align-content: space-around;
+
+
+
+
 
 }
+
+.dev p{
+    color: whitesmoke;
+}
+
+.dev img{   
+    border-radius: 100px;
+    
+    
+}
+
+
+@media only screen and (max-device-width: 900px) {
+
+    .sobre{
+        width: auto;
+    }
+    
+    .equipe {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin: auto;       
+        width: 100px;
+    
+        
+    
+        }
+        
+    }
+
+
+
+    @media only screen and (max-device-width: 700px){
+        .sobre{
+            width: auto;
+        }
+
+        .equipe {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            margin: auto;       
+            width: 50px;
+            height: auto;
+            
+        
+            
+        
+            }
+    }
