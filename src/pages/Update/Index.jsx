@@ -5,6 +5,8 @@ import styles from './Index.module.css'
 import { api } from '../../Services/Api.js';
 import { toast } from 'react-toastify';
 import { FaWrench, FaUndoAlt } from "react-icons/fa";
+import { burger1 } from '../../components/Fotos/Fotos';
+import { Link } from 'react-router-dom';
 
 
 function UpdateProduto() {
@@ -12,12 +14,14 @@ function UpdateProduto() {
         id_produto: '',
         produto: '',
         preco: '',
-        descricao: ''
+        descricao: '',
+        imagem: 0
     })
     const [id, setId] = useState("")
     const [produto, setProduto] = useState("")
     const [preco, setPreco] = useState("")
     const [descricao, setDescricao] = useState("")
+    const [imagem, setImagem] = useState(0)
     const update = (e) => {
         e.preventDefault()
         try {
@@ -52,22 +56,24 @@ function UpdateProduto() {
                     change1={(e) => setId(e.target.value)}
                     change2={(e) => setProduto(e.target.value)}
                     change3={(e) => setPreco(e.target.value)}
+                    change5={(e) => setImagem(e.taget.value)}
                     change4={(e) => {
                         setDescricao(e.target.value)
                         setItem({
-                            id, produto, preco, descricao
+                            id, produto, preco, imagem, descricao
                         })
                     }}
                     id={id}
                     produto={produto}
                     preco={preco}
+                    imagem={burger1[imagem]}
                     descricao={descricao}
 
                 />
             </section>
             <section>
-                <Button click={(e) => update(e)} text={<FaWrench  />} />
-                <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
+                <Button click={(e) => update(e)} text={<FaWrench />} />
+                <Link to="./cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
             </section>
 
         </div>

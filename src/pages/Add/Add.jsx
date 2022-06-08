@@ -6,6 +6,7 @@ import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
 import { FaCheck, FaUndoAlt } from "react-icons/fa";
 import { burger1 } from '../../components/Fotos/Fotos';
+import { Link } from 'react-router-dom';
 
 function Add() {
   const [item, setItem] = useState({
@@ -73,7 +74,7 @@ function Add() {
       </section>
       <section>
         <Button click={(e) => atualiza(e)} text={<FaCheck color='#52BF4E' />} />
-        {/* <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white' />} /> */}
+        <Link to="/cardapio"><Button text={<FaUndoAlt color='white' />} /></Link>
       </section>
     </div>
   )

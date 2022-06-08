@@ -48,7 +48,7 @@ function DeleteProduto() {
 
             <section className={styles.Button}>
                 <Button click={(e) => del(e)} text={<FaRegTrashAlt color='#BF4124' />} />
-                <Button click={(e) => window.location.href = '../cardapio'} text={<FaUndoAlt color='white'/>} />
+                <Link to="./cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
 
 
             </section>
