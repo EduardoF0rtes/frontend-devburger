@@ -14,7 +14,7 @@ function Card({ card, id, name, preco, descricao, imagem }) {
 
                 </div>
                 <div className={style.back}>
-                    <span >nº {id}</span>
+                    <span>nº {id}</span>
                     <b>{name}</b>
                     <span >R$ {preco}</span>
                     <span >{descricao}</span>
