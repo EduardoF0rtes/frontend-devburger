@@ -21,4 +21,4 @@ estabelecimentos do ramo alimenticio na criação e administração do seu carda
 Utilizando a plataforma, o cliente pode criar um cardapio online, adicionar itens, atualizar informações e ate mesmo remover itens do cardapio.
 </p>     
 
-<img src="./src/assets/imagens/Card1.jpeg" alt="">
+![Imagem do Front Card](https://github.com/EduardoF0rtes/frontend-devburger/blob/36f73237031224af5ee8a592ca2845783f764ae4/devburger/src/assets/imagens/print/Card1.jpeg)
