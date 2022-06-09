@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button'
 import styles from './index.module.css';
 import { ToastContainer } from 'react-toastify';
 import { FaPlus, FaWrench, FaRegTrashAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function CardapioPage() {
   
@@ -11,9 +12,9 @@ function CardapioPage() {
     <div className={styles.container}>
         <Cardapio/>
         <div className={styles.btn}>
-            <Button click={(e) => window.location.href="../add"} className={styles.btn} text={<FaPlus color='#52BF4E'/>} /> 
-            <Button click={(e) => window.location.href="../update"} text={<FaWrench />}/>
-            <Button click={(e) => window.location.href="../del"} text={<FaRegTrashAlt color='#BF4124'/>} />
+            <Link to={"/add"}><Button  className={styles.btn} text={<FaPlus color='#52BF4E'/>}/></Link>
+            <Link to={"/update"}><Button text={<FaWrench />}/></Link>
+            <Link to={"/del"}><Button text={<FaRegTrashAlt color='#BF4124'/>}/></Link>
             
             <br />
         </div>

@@ -5,7 +5,7 @@ import styles from './Add.module.css';
 import { api } from '../../Services/Api.js'
 import { toast } from 'react-toastify';
 import { FaCheck, FaUndoAlt } from "react-icons/fa";
-import { burger1 } from '../../components/Fotos/Fotos';
+import { burger } from '../../components/Fotos/Fotos';
 import { Link } from 'react-router-dom';
 
 function Add() {
@@ -68,7 +68,7 @@ function Add() {
           id={id}          
           produto={produto}
           preco={preco}
-          imagem={burger1[imagem]}
+          imagem={burger[imagem]}
           descricao={descricao}
         />
       </section>

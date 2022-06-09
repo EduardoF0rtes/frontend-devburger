@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from "../Carousel/Carousel.module.css"
 
 function Carousel({activeIndex, ImagensCarousel}) {
   return (

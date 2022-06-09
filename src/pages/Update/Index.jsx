@@ -5,7 +5,7 @@ import styles from './Index.module.css'
 import { api } from '../../Services/Api.js';
 import { toast } from 'react-toastify';
 import { FaWrench, FaUndoAlt } from "react-icons/fa";
-import { burger1 } from '../../components/Fotos/Fotos';
+import { burger } from '../../components/Fotos/Fotos';
 import { Link } from 'react-router-dom';
 
 
@@ -17,10 +17,10 @@ function UpdateProduto() {
         descricao: '',
         imagem: 0
     })
-    const [id, setId] = useState("")
-    const [produto, setProduto] = useState("")
-    const [preco, setPreco] = useState("")
-    const [descricao, setDescricao] = useState("")
+    const [id, setId] = useState("1")
+    const [produto, setProduto] = useState("Dev-Bacon")
+    const [preco, setPreco] = useState("28")
+    const [descricao, setDescricao] = useState("Delicioso Burger de Bacon")
     const [imagem, setImagem] = useState(0)
     const update = (e) => {
         e.preventDefault()
@@ -31,7 +31,6 @@ function UpdateProduto() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-
             })
                 .then((res) => res.json())
                 .then((data) => {
@@ -66,14 +65,14 @@ function UpdateProduto() {
                     id={id}
                     produto={produto}
                     preco={preco}
-                    imagem={burger1[imagem]}
+                    imagem={burger[imagem]}
                     descricao={descricao}
 
                 />
             </section>
             <section>
                 <Button click={(e) => update(e)} text={<FaWrench />} />
-                <Link to="./cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
+                <Link to="/cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
             </section>
 
         </div>
