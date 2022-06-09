@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './Cardapio.module.css'
 import Card from '../Cards/Card';
 import { api } from '../../Services/Api';
-import { burger1 } from '../Fotos/Fotos';
-
-
+import { burger } from '../Fotos/Fotos';
 
 function Cardapio() {
     const [dados, setDados] = useState([{}]);
@@ -28,14 +26,12 @@ function Cardapio() {
                     <div>
                         <div>
                             <Card
-
                                 key={index}
-                                card='25%'
                                 id={cardapio.id_produto}
                                 name={cardapio.produto}
                                 preco={cardapio.preco} 
                                 descricao={cardapio.descricao}                                                               
-                                imagem={burger1[cardapio.id_produto]}
+                                imagem={burger[cardapio.id_produto]}
                             />
                         </div>
                     </div>

@@ -6,6 +6,7 @@ import FormDelete from '../../components/Form Delete/FormDelete.jsx'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 import { FaRegTrashAlt, FaUndoAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 function DeleteProduto() {
     const [item, setItem] = useState({
@@ -48,9 +49,7 @@ function DeleteProduto() {
 
             <section className={styles.Button}>
                 <Button click={(e) => del(e)} text={<FaRegTrashAlt color='#BF4124' />} />
-                <Link to="./cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
-
-
+                <Link to="/cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
             </section>
 
 
