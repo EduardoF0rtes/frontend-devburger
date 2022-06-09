@@ -24,10 +24,9 @@ function App() {
           <Route path='/' element={<Home />} ></Route>
           <Route path='/cardapio' element={<CardapioPage />} ></Route>
           <Route path='/add' element={<Add />} ></Route>
-          <Route path='/update' element={<UpdateProduto />} > </Route>
-          <Route path= '/del' element={<DeleteProduto/>} > </Route>
-          <Route path= '/sobre' element={<PageSobre/>} > </Route>
-
+          <Route path='/update' element={<UpdateProduto />} ></Route>
+          <Route path= '/del' element={<DeleteProduto/>} ></Route>
+          <Route path= '/sobre' element={<PageSobre/>} ></Route>
         </Routes>
         <Footer />
       </Router>
