@@ -4,6 +4,7 @@
     width: 100%;
 
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -14,12 +15,15 @@
     padding: 10px;
     align-items: center;
     justify-content: center;
-    
+
 }
-.form div{
+
+.form div {
     position: relative;
 }
-.form input, textarea {
+
+.form input,
+textarea {
     display: block;
     transition: top .3s, left .3s;
     position: relative;
@@ -29,7 +33,7 @@
     height: 30px;
     box-shadow: 2px 2px 2px black;
     text-align: end;
-    
+
 }
 
 .form input:focus {
@@ -59,11 +63,30 @@
 .form span:hover {
     display: block;
 }
-.form input:focus + label {
+
+.form input:focus+label {
     top: -5px;
     left: 0px;
 }
-.form input:focus + label {
+
+.form input:focus+label {
     top: -5px;
     left: 0px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form input,
+    textarea,
+    select {
+        width: 100%;
+    }
 }

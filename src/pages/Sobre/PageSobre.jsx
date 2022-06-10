@@ -1,5 +1,5 @@
-import React from 'react'
-import Sobre from "../../components/Sobre/Sobre"
+import React from 'react';
+import Sobre from "../../components/Sobre/Sobre";
 
 
 function PageSobre() {

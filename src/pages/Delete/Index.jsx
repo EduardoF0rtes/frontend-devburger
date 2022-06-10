@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { api } from '../../Services/Api.js'
-import Button from '../../components/Button/Button'
-import styles from "./Index.module.css"
-import FormDelete from '../../components/Form Delete/FormDelete.jsx'
-import { toast } from 'react-toastify'
-import axios from 'axios'
+import React, { useState } from 'react';
+import { api } from '../../Services/Api.js';
+import Button from '../../components/Button/Button';
+import styles from "./Index.module.css";
+import FormDelete from '../../components/Form Delete/FormDelete.jsx';
+import { toast } from 'react-toastify';
+import axios from 'axios';
 import { FaRegTrashAlt, FaUndoAlt } from "react-icons/fa";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function DeleteProduto() {
     const [item, setItem] = useState({

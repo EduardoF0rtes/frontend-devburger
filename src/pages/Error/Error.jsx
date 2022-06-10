@@ -1,7 +1,7 @@
-import React from 'react'
-import style from './Error.module.css'
-import { Link } from 'react-router-dom'
-import Button from '../../components/Button/Button'
+import React from 'react';
+import style from './Error.module.css';
+import { Link } from 'react-router-dom';
+import Button from '../../components/Button/Button';
 import { FaUndoAlt } from "react-icons/fa";
 
 function Error() {
@@ -12,7 +12,7 @@ function Error() {
             <p>Está página não existe ou esta em manutenção.</p>
             <p>Utilize o botão para retornar.</p>
             <div>
-            <Link to="/cardapio">  <Button text={<FaUndoAlt color='white' />} /></Link>
+            <Link to="/cardapio"><Button text={<FaUndoAlt color='white' />} /></Link>
             </div>
             
 

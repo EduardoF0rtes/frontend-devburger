@@ -3,7 +3,6 @@
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 .segundo{
     display: flex;
     width: 100%;
@@ -11,26 +10,20 @@
     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: space-evenly;
     align-items: center;
-    padding: 15%;
-  
+    padding: 15%; 
    
 }
-
 .segundo div{
     
     width: 35vw;
     font-size: 20px;
     align-items: center;
     text-align: center;
-
 }
-
 .Sobre{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
-
 .Banner{
     display: flex;
     align-items: center;
@@ -49,3 +42,27 @@
 .Banner img{
     margin-top: 10px;
 }
+
+@media (max-width: 991px) {
+    .segundo{
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: auto;
+    }
+    .segundo p{
+        width: 100vw;
+    }
+    .segundoGif{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .Banner{
+        height: auto;
+        width: 100vw;
+    }
+    .Banner img{
+        height: auto;
+        width: 90vw;
+    }
+   }

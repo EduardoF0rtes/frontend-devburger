@@ -74,3 +74,18 @@
 .container h1{
     text-align: center;
 }
+@media (max-width: 991px) {
+ .container{
+    flex-direction: column-reverse;
+    align-items: center;
+ }
+ .form{
+    width: 80%;
+ }
+ .form input, textarea, select {
+    width: 100%;
+ }
+ .form select {
+    width: 40vw;
+ }
+}

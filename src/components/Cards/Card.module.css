@@ -66,22 +66,19 @@
 @media (max-width: 991px) {
 
     .container{
-        height: 100px;
-    }
-    .item {
-        
+        justify-content: center;
         display: flex;
-        width: 20vh;
-        margin: 3vh;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
         
     }
+    .item {        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }   
 
-    .item img {
-        width: 15vh;
-    }
-    .front,
-.back { 
-    width:200px;
-    height:120px;
-}
 }

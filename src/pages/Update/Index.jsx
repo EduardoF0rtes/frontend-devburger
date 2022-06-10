@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Form from '../../components/Form/Form'
-import Button from '../../components/Button/Button'
-import styles from './Index.module.css'
+import React, { useState } from 'react';
+import Form from '../../components/Form/Form';
+import Button from '../../components/Button/Button';
+import styles from './Index.module.css';
 import { api } from '../../Services/Api.js';
 import { toast } from 'react-toastify';
 import { FaWrench, FaUndoAlt } from "react-icons/fa";
@@ -17,11 +17,11 @@ function UpdateProduto() {
         descricao: '',
         imagem: 0
     })
-    const [id, setId] = useState("1")
-    const [produto, setProduto] = useState("Dev-Bacon")
-    const [preco, setPreco] = useState("28")
-    const [descricao, setDescricao] = useState("Delicioso Burger de Bacon")
-    const [imagem, setImagem] = useState(0)
+    const [id, setId] = useState("1");
+    const [produto, setProduto] = useState("Dev-Bacon");
+    const [preco, setPreco] = useState("28");
+    const [descricao, setDescricao] = useState("Delicioso Burger de Bacon");
+    const [imagem, setImagem] = useState(0);
     const update = (e) => {
         e.preventDefault()
         try {
@@ -45,7 +45,7 @@ function UpdateProduto() {
             console.error(error)
             toast.error(data.erro)
         }
-    }
+    };
     return (
         <div className={styles.form}>
             <section>
