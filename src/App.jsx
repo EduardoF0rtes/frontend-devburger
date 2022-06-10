@@ -12,7 +12,7 @@ import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
 import DeleteProduto from "./pages/Delete/Index";
 import PageSobre from "./pages/Sobre/PageSobre";
-import Error from "./pages/error/error";
+import Error from "./pages/Error/Error";
 
 
 function App() {
