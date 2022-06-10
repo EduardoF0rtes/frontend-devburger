@@ -12,9 +12,9 @@ function CardapioPage() {
     <div className={styles.container}>
         <Cardapio/>
         <div className={styles.btn}>
-            <Link to={"/add"}><Button  className={styles.btn} text={<FaPlus color='#52BF4E'/>}/></Link>
-            <Link to={"/update"}><Button text={<FaWrench />}/></Link>
-            <Link to={"/del"}><Button text={<FaRegTrashAlt color='#BF4124'/>}/></Link>
+            <Link to="/add"><Button  className={styles.btn} text={<FaPlus color='#52BF4E'/>}/></Link>
+            <Link to="/update"><Button text={<FaWrench />}/></Link>
+            <Link to="/del"><Button text={<FaRegTrashAlt color='#BF4124'/>}/></Link>
             
             <br />
         </div>
