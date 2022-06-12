@@ -45,7 +45,7 @@
 
 @media (max-width: 991px) {
     .segundo{
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100vw;
         height: auto;
     }

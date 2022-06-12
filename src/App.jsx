@@ -1,6 +1,4 @@
 import Header from "./components/Header/Header"
-import Cardapio from './components/Cardapio/Cardapio';
-import Slider from "./components/Slider/Slider";
 import Footer from "./components/Footer/Footer";
 import React from "react"
 import Home from "./pages/Home";

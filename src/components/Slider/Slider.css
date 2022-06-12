@@ -138,13 +138,15 @@
 
   .slide-title,
   .slide-text {
+    text-shadow: 1px 1px black;
     font-size: 30px;
     top: 5%;
     height: auto;
   }
-  .slide-text {
+  .slide-text {    
+    text-shadow: 1px 1px black;
     top: 60%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: auto;
   }
   .slider-container {
