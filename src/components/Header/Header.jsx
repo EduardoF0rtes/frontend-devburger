@@ -9,9 +9,7 @@ function Header() {
 
     return (
     <header className={styles.Header}>
-        <div className={styles.img}>
-            <a class="navbar-brand" id="logo">
-                <img src= {logo} alt="logo DevBurger" height={150} width={150} /></a>
+        <div className={styles.img}>            
         </div>
         <div className={styles.nav}>
             <ul className={styles.ul}> 
