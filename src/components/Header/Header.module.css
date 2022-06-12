@@ -45,14 +45,14 @@
 }
 
 .ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 75vw;
+    text-align: end;
     font-size: 1.8rem;
 }
 
 .ul li {
     display: inline;
+    margin-left: 20px;
     text-decoration: none;
     color: #EDA83B;
 }
