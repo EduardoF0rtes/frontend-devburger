@@ -6,19 +6,16 @@ import { FaUndoAlt } from "react-icons/fa";
 
 function Error() {
     return (
-        <>
         <div className={style.container}>
             <h1>Página não encontrada.</h1>
             <p>Está página não existe ou esta em manutenção.</p>
             <p>Utilize o botão para retornar.</p>
+            <hr />
+            <br />
             <div>
-            <Link to="/cardapio"><Button text={<FaUndoAlt color='white' />} /></Link>
+                <Link to="/cardapio"><Button text={<FaUndoAlt color='white' />} /></Link>
             </div>
-            
-
         </div>
-        </>
-        
     )
 }
 

@@ -75,3 +75,7 @@ ____
 # ➡️Endpoint:
 
 - Cardapio
+____
+# 📲 Confira você mesmo:
+Utilizando o link você pode conferir como ficou o nosso site.
+ [Click aqui](https://devburger.netlify.app/)
