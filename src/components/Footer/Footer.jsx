@@ -1,6 +1,7 @@
 import style from './Footer.module.css'
 import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare, FaAndroid, FaApple } from 'react-icons/fa'
 import gif from "../../assets/imagens/hamburger.gif"
+import { Link } from "react-router-dom"; 
 const Footer = (props) => {
     return (
         <div className={style.footer}>
@@ -8,9 +9,9 @@ const Footer = (props) => {
             <div className={style.widgetFooter}>
                 <div className={style.mapaDoSite}>
                     <h3>Mapa do Site</h3>
-                    <a href='#'>Home</a>
-                    <a href="/cardapio">Cardápio</a>
-                    <a href="#">Sobre Nós</a>
+                    <Link to='#'>Home</Link>
+                    <Link to="/cardapio">Cardápio</Link>
+                    <Link to="/sobre">Sobre Nós</Link>
                 </div>
                 <div className={style.sigaNos}>
                     <h3>Dev Burger</h3>
