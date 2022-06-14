@@ -9,7 +9,7 @@ const Footer = (props) => {
             <div className={style.widgetFooter}>
                 <div className={style.mapaDoSite}>
                     <h3>Mapa do Site</h3>
-                    <Link to='#'>Home</Link>
+                    <Link to='/'>Home</Link>
                     <Link to="/cardapio">Cardápio</Link>
                     <Link to="/sobre">Sobre Nós</Link>
                 </div>
