@@ -14,10 +14,10 @@
     justify-content: space-evenly;
 }
 
-.img {
-    width: 10vw;
+.img, .imgActive {
+    width: 20vw;
     display: flex;
-    height: 20vh;
+    height: 30vh;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -25,8 +25,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 100%;
-    box-shadow: 4px 4px #EDA83B;
+    border-radius: 50%;
 }
 
 .img img {
@@ -36,57 +35,149 @@
     width: 100%;
     height: 100%;
 }
-
-.nav {
-    align-items: flex-start;
-    font-family: monospace;
-    color: #EDA83B;
-
-}
-
 .ul {
-    width: 75vw;
-    text-align: end;
-    font-size: 1.8rem;
+    font-size:  1.8rem;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
 }
-
-.ul li {
-    display: inline;
-    margin-left: 20px;
+.nav a:hover{
+    font-weight: 600;
+}
+.nav li {
     text-decoration: none;
+    list-style: none;
+}
+.nav a {
     color: #EDA83B;
+    text-decoration: none;
 }
 
-.ul a {
-    text-decoration: none;
-    color: whitesmoke;
-}
 
 @media (max-width: 991px) {
-    .Header {
+
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    html,
+    body,
+    #root, 
+    .App {
+        position: relative;
+        width: 100vw;
+    }
+    .Header{
+        display: block;
+        height: auto;
+    }
+    .icon,
+    .onIcon {
+        position: absolute;
+        z-index: 4;
+        left: 1%;
+        width: fit-content;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        top: -70%;
+        left: 10%;
+        width: 30px;
+        height: 6px;
+        background-color: #EDA83B;
+        position: absolute;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+    }
+
+    .hamburger::before {
+        top: -12px;
+        content: "";
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: #EDA83B;
+        transition: 0.5s;
+    }
+
+    .hamburger::after {
+        top: 12px;
+        content: "";
+        position: absolute;
+        width: 37px;
+        height: 6px;
+        background-color: #EDA83B;
+        transition: 0.5s;
+    }
+
+    .nav {
         display: flex;
         flex-direction: column;
-    }
-
-    .ul {
-        width: 100vw;
-        margin:  10px;
-    }
-    .ul :hover{
-        color: silver;
-    }
-
-    .nav .ul a li {
-        text-shadow: 2px 2px gray;
-        font-size: 25px;
-        width: 100%;
+        left: 1%;
+        padding: 45px 0 0;
         flex-wrap: nowrap;
-        /* font-size: calc(.8vw + .65rem); */
+        font-size: 1.2rem;
+        font-weight: 600;
     }
 
+    .nav .ul {
+        padding: 0;
+        list-style: none;
+        display: block;
+    }
+
+    .nav .ul li {
+        margin: 2px 8px;
+        cursor: pointer;
+    }
+
+    .nav .ul li:hover {
+        font-weight: 800;
+    }
+
+    .onIcon .hamburger {
+        background: transparent;
+        box-shadow: 0 2px 5px transparent;
+    }
+
+    .onIcon .hamburger:after {
+        top: 8vh;
+        background: #fff;
+        transform: rotate(225deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .onIcon .hamburger:before {
+        top: 8vh;
+        background: #fff;
+        transform: rotate(135deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menuOpen {
+        width: 100vw;
+        height: 30vh;
+        background: transparent;
+        box-shadow: 10px 0px 69px 0px rgba(0, 0, 0, 0.59);
+    }
+
+    .menuClose {
+        display: none;
+        width: 0px;
+    }
     .img {
-        width: 80vw;
-        height: 80vh;
-        box-shadow: 4px 4px #EDA83B;
+        display: none;        
+        margin-left: 22vw;
+        width: 50vw;
+    }
+    .imgActive {
+        margin-left: 22vw;
+        width: 50vw;
     }
 }
